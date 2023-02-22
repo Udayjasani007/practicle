@@ -1,0 +1,135 @@
+* {
+    box-sizing: border-box;
+    font-family: "Poppins_Regular" !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+.para,
+.head_1,
+.head_2,
+.head_3,
+.head_4,
+.head_5,
+.head_6,
+.list {
+    margin: 0;
+}
+
+.input_section {
+    display: flex;
+    justify-content: space-between;
+    .input {
+        width: 100%;
+        border: 1px solid $border_color;
+        border-radius: 5px;
+        padding: 5px 15px;
+        margin-bottom: 15px;
+        &::before,
+        &::after {
+            content: unset;
+        }
+
+    }
+    >.w_49{
+        @include media1024{
+            margin-bottom: 0;
+        }
+    }
+}
+
+.w_49 {
+    width: 49% !important;
+}
+
+.w_100 {
+    width: 100% !important;
+}
+
+.mr_2 {
+    margin-right: 15px !important;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.error{
+    color: red;
+    margin-top: -10px;
+    margin-bottom: 20px;
+}
+
+.date_error{
+    margin-top: 5px;
+}
+
+.dates{
+    >div{
+        width: 100%;
+    }
+    input{
+        max-height: 30px;
+        min-height: 30px;
+        padding: 7px 10px;
+    }
+    label{
+        margin-top: -5px;
+        color: $label !important;
+    }
+}
+
+.error_input{
+    border: 1px solid red !important;
+    color: red !important;
+    &::placeholder{
+        color: red !important;
+    }
+    label{
+        color: red !important;
+        opacity: 0.4;
+    }
+}
+
+.gender_label {
+    border: unset !important;
+}
+
+.mb-15{
+    margin-bottom: 15px !important;
+}
+
+.select_box{
+    >label{
+        margin-top: -5px;
+        color: $label;
+    }
+    >div {
+        >div{
+            padding: 10px 15px;
+        }
+    }
+}
+
+.success_record{
+    display: flex;
+    width: 100%;
+    padding: 10px 0;
+    border-bottom: 1px solid $label;
+    >p{
+        width: 50%;
+    }
+}
+
+.d_block{
+    display: block;
+}

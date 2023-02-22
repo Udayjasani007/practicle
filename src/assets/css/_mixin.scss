@@ -1,0 +1,19 @@
+@mixin fontface($font_family_name, $font_weight, $src) {
+    @font-face {
+        font-family: $font_family_name;
+        font-weight: $font_weight;
+        src: url("../fonts/#{$src}.woff2");
+      }
+}
+
+@mixin media1024{
+  @media(max-width:1024px){
+    @content;
+  }
+}
+
+@mixin media576{
+  @media(max-width:576px){
+    @content;
+  }
+}

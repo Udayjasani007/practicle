@@ -1,0 +1,10 @@
+.form_section{
+    background: $form_back;
+    padding: 20px;
+    border-radius: 5px;
+    .form_part{
+        background: $white;
+        border-radius: 5px;
+        padding: 15px;
+    }
+}

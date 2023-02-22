@@ -1,0 +1,51 @@
+.stepper_section {
+    width: 100%;
+    .step_label {
+        position: relative;
+        .stepper_label {
+            justify-content: center;
+            .MuiStepLabel-labelContainer {
+                display: none;
+            }
+        }
+        .label_text {
+            position: absolute;
+            bottom: -31px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+            width: max-content;
+            text-transform: uppercase;
+        }
+    }
+
+    .stepper_btn {
+        display: flex;
+        flex-direction: row;
+        padding-top: 25px;
+    }
+
+    .completed_section {
+        padding-top: 50px;
+        .reset_btn {
+            display: flex;
+            flex-direction: "row";
+            padding-top: 2;
+        }
+    }
+
+    >form {
+        >div{
+            padding-left: 65px;
+            padding-right: 65px;
+            >div{
+                @include media576{
+                    flex-direction: column;
+                }
+                >div{
+                    margin-bottom: 20px;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,35 @@
+.form_sub_parts {
+    padding: 70px 0 10px 0 !important;
+    @include media576{
+        padding-top: 30px !important;
+    }
+    .input_section {
+        @include media576{
+            flex-direction: unset;
+        }
+    }
+    .date_picker {
+        input {
+            padding: 10px 15px;
+        }
+        label {
+            color: $label;
+            margin-top: -5px;
+        }
+        > div {
+            border: 1px solid $border_color !important;
+            outline: none !important;
+        }
+    }
+    .gender_section{
+        flex-direction: unset;
+    }
+    .gender_label{
+        color: $label;
+        margin-top: -5px;
+        font-weight: 400;
+        font-size: 1rem;
+        line-height: 1.4375em;
+        letter-spacing: 0.00938em;
+    }
+}
